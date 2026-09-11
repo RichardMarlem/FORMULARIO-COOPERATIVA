@@ -1,0 +1,419 @@
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg);
+  color: var(--color);
+  min-height: 100vh;
+}
+
+
+header {
+  width: 100%;
+  min-height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--border);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  gap: 1.2rem;
+
+  h1{
+    font-family: var(--font-family);
+    font-weight: 500;
+    color: var(--color2);
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+}
+
+header img {
+  max-height: 3.5rem;
+  width: auto;
+  object-fit: contain;
+}
+
+
+.principal {
+  width: 100%;
+  min-height: calc(100vh - 5rem);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem 1rem 4rem;
+}
+
+
+.forms {
+  width: 100%;
+  max-width: 53.7rem;
+  background-color: var(--bg);
+  border-radius: 0.8rem;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.08);
+  padding: 2.5rem 3rem;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color);
+  
+  font-family: var(--font-family);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 1.5rem 0 0.75rem;
+  border-bottom: 0.3rem solid var(--button);
+  margin-bottom: 1.25rem;
+}
+
+
+.dados-pessoais,
+.local_atendimento {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+
+.forms-dados {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+
+  p{
+    color: var(--color3);
+    font-size: 0.7rem;
+  }
+}
+
+input#nome{
+  width: 70%;
+  height: 1.5rem;
+  font-size: 0.8rem;
+}
+
+.forms-dados2{
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  justify-content: center;
+
+  .dados-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  background-color: var(--bg);
+  border: 0.1rem solid var(--border);
+  border-radius: 0.1rem;
+  padding: 1rem 1.25rem;
+
+  label{
+    color: var(--color);
+    
+  }
+}
+
+.dados-checkbox input[type="checkbox"] {
+  margin-top: 0.2rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  min-width: 1.1rem;
+  accent-color: var(--color);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.dados-checkbox label {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--color3);
+  line-height: 1.1;
+  cursor: pointer;
+}
+
+.dados-checkbox label a {
+  color: var(--color);
+}
+
+  
+}
+
+label {
+  font-size: 0.775rem;
+  font-weight: 700;
+  color: var(--color);
+  line-height: 1.8;
+
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.6rem 0.85rem;
+  font-size: 0.9rem;
+  font-family: var(--font-family);
+  color: var(--color3);
+  background-color: var(--bg);
+  border: 0.1rem solid var(--border);
+  border-radius: 0.5rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--bg);
+  box-shadow: 0 0 0 0.1rem rgb(75, 154, 238);
+  background-color: var(--bg);
+}
+
+select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23555' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.85rem center;
+  padding-right: 2rem;
+  cursor: pointer;
+  
+}
+
+textarea {
+  resize: vertical;
+  min-height: 5.6rem;
+}
+
+
+input[type="file"] {
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 0.8rem;
+  color: var(--color3);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="file"]::file-selector-button {
+  padding: 0.4rem 1rem;
+  font-size: 0.8rem;
+  font-family: var(--font-family);
+  color: var(--color2);
+  background-color: var(--button);
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-right: 0.75rem;
+  transition: background-color 0.2s ease;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: var(--bg2);
+  color: var(--color2);
+  transition: all 0.5s;
+}
+
+
+.dados-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: var(--bg);
+  border: 0.1rem solid var(--border);
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+}
+
+.dados-checkbox input[type="checkbox"] {
+  margin-top: 0.2rem;
+  width: 1rem;
+  height: 1rem;
+  min-width: 1rem;
+  accent-color: var(--button);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.dados-checkbox label {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--color3);
+  line-height: 1.1;
+  text-align: start;
+  cursor: pointer;
+  
+}
+
+.dados-checkbox label a {
+  color: var(--color);
+}
+
+
+.btnenvio {
+  width: 100%;
+  padding: 0.85rem;
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: inherit;
+  letter-spacing: 0.06em;
+  color: var(--color2);
+  background-color: var(--color);
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.15s ease;
+}
+
+.btnenvio:hover {
+  background-color: var(--button);
+  transform: translateY(-1px);
+}
+
+.btnenvio:active {
+  transform: translateY(0);
+}
+
+.btnenvio:disabled {
+  background-color: var(--border);
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* pra tablet*/
+@media (max-width: 768px) {
+  .forms {
+    padding: 2rem 1.75rem;
+  }
+
+  h3 {
+    font-size: 0.8rem;
+  }
+
+  label {
+    font-size: 0.8rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="number"],
+  select,
+  textarea {
+    font-size: 0.725rem;
+  }
+
+.dados-checkbox label {
+    font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--color3);
+  line-height: 1.1;
+  text-align: start;
+  cursor: pointer;
+  }
+
+  .btnenvio {
+    font-size: 0.95rem;
+  }
+}
+
+/* Pra celular */
+@media (max-width: 480px) {
+
+
+
+  .forms {
+    padding: 1.5rem 1.25rem;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  h3 {
+    font-size: 0.85rem;
+  }
+
+  label {
+    font-size: 0.8rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="number"],
+  select,
+  textarea {
+    font-size: 0.6rem;
+    padding: 0.55rem 0.75rem;
+  }
+
+  .dados-checkbox {
+    padding: 0.85rem 1rem;
+
+  }
+
+  .dados-checkbox label {
+    font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--color3);
+  line-height: 1.1;
+  text-align: start;
+  cursor: pointer;
+  }
+
+  input[type="file"]::file-selector-button {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.8rem;
+  }
+
+  .btnenvio {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+
+  header{
+    display: flex;
+    flex-direction: column;
+
+    h1{
+        font-size: 1.8rem;
+        font-family: var(--font-family);
+        font-weight: 300;
+    }
+  }
+}

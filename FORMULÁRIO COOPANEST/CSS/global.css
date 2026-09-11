@@ -1,0 +1,18 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --font-family: "Poppins", sans-serif;
+    --font-family2: "Inter", sans-serif;
+    --font-family3:"Ubuntu", sans-serif;
+    --color:#0971B3;
+    --color2:#F4F6F5;
+    --color3:#080808;
+    --bg:#f5f5f5;
+    --bg2:#ED1F30;
+    --bg3:#ffffff;
+    --border: #5f5e5e;
+    --button: #71A3D2;
+}

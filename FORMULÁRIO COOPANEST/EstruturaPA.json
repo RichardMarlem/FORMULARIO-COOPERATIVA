@@ -1,0 +1,895 @@
+{
+  "idCliente": "dcdd6b11-4694-451f-9424-5e91524ba6c1",
+  "idConfWorkflow": "483f0587-49cd-46f6-9bfa-906925f58777",
+  "idUsuario": "e6fc2827-e7c7-4796-8fc0-a871ded8e957",
+  "email": "richard.marlem@arquivar.com",
+  "observacao": "",
+  "comentario": "",
+  "formulario": {
+    "idFormulario": "DAC906A9-EE4D-4119-836F-0E88FCE7C539",
+    "camposFormulario": [
+      {
+        "idCampo": "4B7373B4-A533-4FFD-B83E-03E4A473703A",
+        "labelCampo": "Conselho",
+        "valorCampo": "@{triggerBody()?['conselho']}"
+      },
+      {
+        "idCampo": "FDDC2AA1-DFAC-4C89-AC4F-31A12B5E36D5",
+        "labelCampo": "Nº do Conselho",
+        "valorCampo": "@{triggerBody()?['nconselho']}"
+      },
+      {
+        "idCampo": "57FA60ED-21C9-4B9E-9316-3D4779EA9153",
+        "labelCampo": "Nome",
+        "valorCampo": "@{triggerBody()?['nome']}"
+      },
+      {
+        "idCampo": "C34FA0C6-44B8-4889-9E83-30269871653A",
+        "labelCampo": "Nome Social",
+        "valorCampo": "@{triggerBody()?['nome_social']}"
+      },
+      {
+        "idCampo": "9072599E-F53E-4F50-86A6-3A6A517E8E87",
+        "labelCampo": "Sigla",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "A12F0B6C-AFF6-485C-9108-64FD2EFD197E",
+        "labelCampo": "CNPJ/CPF",
+        "valorCampo": "@{triggerBody()?['cpf_cnpj']}"
+      },
+      {
+        "idCampo": "BAEFCAFC-924D-49C7-9270-B07718E92523",
+        "labelCampo": "Data de Nascimento",
+        "valorCampo": "@{triggerBody()?['dt_nascimento']}"
+      },
+      {
+        "idCampo": "BDC408FD-5003-4EE8-9094-C4BBD4C047FF",
+        "labelCampo": "Nome da Mãe",
+        "valorCampo": "@{triggerBody()?['nome_mae']}"
+      },
+      {
+        "idCampo": "C6FE1346-91D0-4CCE-B803-16534288623A",
+        "labelCampo": "Nome do Pai",
+        "valorCampo": "@{triggerBody()?['nome_pai']}"
+      },
+      {
+        "idCampo": "9328B91E-971D-4F72-AEB4-F24E3AB9834A",
+        "labelCampo": "Raça/Cor",
+        "valorCampo": "@{triggerBody()?['raca']}"
+      },
+      {
+        "idCampo": "6630DF01-AA05-449D-B7D6-AEA9A182F80D",
+        "labelCampo": "Estado Civil",
+        "valorCampo": "@{triggerBody()?['estado_civil']}"
+      },
+      {
+        "idCampo": "1A62CF3C-FAA8-4B9E-AC7E-91C960AA613A",
+        "labelCampo": "Sexo",
+        "valorCampo": "@{triggerBody()?['sexo']}"
+      },
+      {
+        "idCampo": "94F1A7F3-D5E5-4D38-9114-DB26A472A3D8",
+        "labelCampo": "Nacionalidade",
+        "valorCampo": "@{triggerBody()?['nacionalidade']}"
+      },
+      {
+        "idCampo": "349CE14A-D1D6-4C30-9E69-C35E6AE85B7B",
+        "labelCampo": "País de Nascimento",
+        "valorCampo": "@{triggerBody()?['pais_nascimento']}"
+      },
+      {
+        "idCampo": "42789718-5EBC-48F2-89F1-99AAB73489D3",
+        "labelCampo": "Estado de Nascimento",
+        "valorCampo": "@{triggerBody()?['estado_nascimento']}"
+      },
+      {
+        "idCampo": "3069559C-87AB-45D0-AE66-8A32FD1F7575",
+        "labelCampo": "Município de Nascimento",
+        "valorCampo": "@{triggerBody()?['municipio_nascimento']}"
+      },
+      {
+        "idCampo": "0F8B1717-A19F-45FD-94D6-B0EFB0472989",
+        "labelCampo": "RG",
+        "valorCampo": "@{triggerBody()?['rg']}"
+      },
+      {
+        "idCampo": "7597943C-4868-4988-95E0-8DD22884459A",
+        "labelCampo": "Órgão Emissor RG",
+        "valorCampo": "@{triggerBody()?['orgao_emissor']}"
+      },
+      {
+        "idCampo": "541359AA-8707-41CA-AEF6-A8AF5BE72D8B",
+        "labelCampo": "Data Emissão RG",
+        "valorCampo": "@{triggerBody()?['data_emissao_rg']}"
+      },
+      {
+        "idCampo": "C131D326-AE38-4168-92E3-330D92BE430D",
+        "labelCampo": "Nº INSS",
+        "valorCampo": "@{triggerBody()?['n_inss']}"
+      },
+      {
+        "idCampo": "3A2C847F-E691-413F-8F55-A736AE2EBFC7",
+        "labelCampo": "PIS",
+        "valorCampo": "@{triggerBody()?['pis']}"
+      },
+      {
+        "idCampo": "A6BE105F-792F-4917-B556-833DD0AB8E4A",
+        "labelCampo": "Nº do ISS",
+        "valorCampo": "@{triggerBody()?['n_iss']}"
+      },
+      {
+        "idCampo": "14308C14-10A8-41D2-A2F6-11879AFFCA8B",
+        "labelCampo": "CNES/CNS",
+        "valorCampo": "@{triggerBody()?['cnes_cns']}"
+      },
+      {
+        "idCampo": "9039C41F-6F91-4ED7-B64D-5272796E158D",
+        "labelCampo": "Nº Registro ANS",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "E498E7A0-E853-469F-B3C2-AEA477B69668",
+        "labelCampo": "Data de Emissão C. Regional",
+        "valorCampo": "@{triggerBody()?['data_emissao_cregional']}"
+      },
+      {
+        "idCampo": "6C5785B7-CAB6-4DF9-852D-4AF8D3188152",
+        "labelCampo": "Grau de Instrução",
+        "valorCampo": "@{triggerBody()?['grau_instrucao']}"
+      },
+      {
+        "idCampo": "20522A68-AF39-46CA-8992-FCA56B8BB16F",
+        "labelCampo": "Benefício Previdenciário",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "2DF333A5-F449-4A87-B7B2-E8B5EADA4C50",
+        "labelCampo": "Deficiência Física",
+        "valorCampo": @{if(triggerBody()?['deficienciaFisica'], 'Sim', 'Não')}
+      },
+      {
+        "idCampo": "C98320E3-80E8-4E3F-83E1-887F6C1E0E71",
+        "labelCampo": "Deficiência Visual",
+        "valorCampo": @{if(triggerBody()?['deficienciaVisual'], 'Sim', 'Não')}
+      },
+      {
+        "idCampo": "A189B9D0-AA4E-4274-A05D-EA40D265F659",
+        "labelCampo": "Deficiência Auditiva",
+        "valorCampo": @{if(triggerBody()?['deficienciaAuditiva'], 'Sim', 'Não')}
+      },
+      {
+        "idCampo": "7A56105A-CB34-4863-B7CB-31D83EC06AEB",
+        "labelCampo": "Deficiência Mental",
+        "valorCampo": @{if(triggerBody()?['deficienciaMental'], 'Sim', 'Não')}
+      },
+      {
+        "idCampo": "AA8F8438-98E9-472D-8D7B-17B6AA092542",
+        "labelCampo": "Deficiência Intelectual",
+        "valorCampo": "@{if(equals(triggerBody()?['deficienciaIntelectual'], 'true'), 'Sim', 'Não')}"
+      },
+      {
+        "idCampo": "942E29F8-01DE-4812-9280-481633293623",
+        "labelCampo": "Nº RNE",
+        "valorCampo": "@{triggerBody()?['n_rne']}"
+      },
+      {
+        "idCampo": "309C8BF1-0CEE-4C17-A000-6A4F99CFEF51",
+        "labelCampo": "Órgão Emissor RNE",
+        "valorCampo": "@{triggerBody()?['orgao_emissor_rne']}"
+      },
+      {
+        "idCampo": "C665810E-8175-4A79-90C9-A4819748D988",
+        "labelCampo": "Data Emissão RNE",
+        "valorCampo": "@{triggerBody()?['data_emissao_rne']}"
+      },
+      {
+        "idCampo": "C785AC9C-BEC7-4BCA-AD4F-FED78A9E335B",
+        "labelCampo": "Data de Naturalização",
+        "valorCampo": "@{triggerBody()?['data_naturalizacao']}"
+      },
+      {
+        "idCampo": "192997A5-82DC-423E-B35E-66FC3A775DED",
+        "labelCampo": "Casado com Brasileiro",
+        "valorCampo": "@{triggerBody()?['casado_brasileiro']}"
+      },
+      {
+        "idCampo": "37BF7A21-F426-4106-9A9F-D0CC7BE941E4",
+        "labelCampo": "Filho Brasileiro",
+        "valorCampo": "@{triggerBody()?['filho_brasileiro']}"
+      },
+      {
+        "idCampo": "710A7E7E-726B-4D02-918D-0F4B7880C6BF",
+        "labelCampo": "Data Chegada ao Brasil",
+        "valorCampo": "@{triggerBody()?['data_chegada_brasil']}"
+      },
+      {
+        "idCampo": "A18D4554-35F3-4DA9-A9D8-7CBD57A5766A",
+        "labelCampo": "Nome da Cooperativa",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "564689AF-5671-4E49-A004-EF4096BC217E",
+        "labelCampo": "CNPJ da Cooperativa",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "0E626AAF-F017-4311-B2B2-0FE0D5AEE149",
+        "labelCampo": "Endereço da Cooperativa",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "6F920BE9-55C7-4444-B691-EE38D8C65ADC",
+        "labelCampo": "Matrícula",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "74EE956A-21C8-41F6-BA32-64E6B53AEF37",
+        "labelCampo": "Data de Admissão",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "13CE5C54-CB7F-420A-8530-B6928E0DB166",
+        "labelCampo": "Inscrição Municipal",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "063FDB95-F590-4B1F-9898-EAD0189966C3",
+        "labelCampo": "Inscrição Estadual",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "3FA56D7D-0537-4A28-A243-411F8A4B3A14",
+        "labelCampo": "Tipo de Tributação",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "E98B4D4E-23C9-4AE0-B826-D489185B2496",
+        "labelCampo": "Nº Banco",
+        "valorCampo": "@{triggerBody()?['nbanco']}"
+      },
+      {
+        "idCampo": "8778D00F-4A0B-4D48-AD43-AD6606336E27",
+        "labelCampo": "Banco",
+        "valorCampo": "@{triggerBody()?['banco']}"
+      },
+      {
+        "idCampo": "65400784-9408-4B0C-B5C4-51347BE8F1E4",
+        "labelCampo": "Agência",
+        "valorCampo": "@{triggerBody()?['agencia']}"
+      },
+      {
+        "idCampo": "F441AA28-113A-4667-8E53-5C7769AC8A60",
+        "labelCampo": "Conta Corrente",
+        "valorCampo": "@{triggerBody()?['conta_corrente']}"
+      },
+      {
+        "idCampo": "6EC8F021-77FB-4D89-A1C0-12AE111F7B0F",
+        "labelCampo": "Tipo de Endereço 01",
+        "valorCampo": "@{triggerBody()?['tipo_endereco1']}"
+      },
+      {
+        "idCampo": "946F1C8B-CB40-4838-A944-9659CB2DCA6E",
+        "labelCampo": "Tipo de Logradouro 01",
+        "valorCampo": "@{triggerBody()?['tipo_logradouro1']}"
+      },
+      {
+        "idCampo": "BC379925-65D8-4122-BAC7-12A9E151AA61",
+        "labelCampo": "Logradouro 01",
+        "valorCampo": "@{triggerBody()?['logradouro1']}"
+      },
+      {
+        "idCampo": "EBBB222F-96CF-4C78-935B-164208AA4CEE",
+        "labelCampo": "Nº Endereço 01",
+        "valorCampo": "@{triggerBody()?['n_endereco1']}"
+      },
+      {
+        "idCampo": "57F4FF2A-5F97-43AA-BDB7-98BA510A8A5B",
+        "labelCampo": "Complemento Endereço 01",
+        "valorCampo": "@{triggerBody()?['complemento_endereco1']}"
+      },
+      {
+        "idCampo": "2B1521BD-2EA0-4A85-989F-42A3FD9F556D",
+        "labelCampo": "Bairro Endereço 01",
+        "valorCampo": "@{triggerBody()?['bairro_endereco1']}"
+      },
+      {
+        "idCampo": "9A0C66EE-B869-425D-BD73-92F8368626ED",
+        "labelCampo": "Cidade Endereço 01",
+        "valorCampo": "@{triggerBody()?['cidade_endereco1']}"
+      },
+      {
+        "idCampo": "DEAB79A9-FBF3-405A-B7C1-4E0B7532CAE0",
+        "labelCampo": "Telefone Endereço 01",
+        "valorCampo": "@{triggerBody()?['telefone_endereco1']}"
+      },
+      {
+        "idCampo": "747E902E-3491-4729-8489-12B15A1CF56D",
+        "labelCampo": "Celular Endereço 01",
+        "valorCampo": "@{triggerBody()?['celular_endereco1']}"
+      },
+      {
+        "idCampo": "B0B562C5-504A-416D-A36E-834C2B9B0603",
+        "labelCampo": "CEP Endereço 01",
+        "valorCampo": "@{triggerBody()?['cep_endereco1']}"
+      },
+      {
+        "idCampo": "15996E4E-FBA7-40AC-A823-6B88C9F0F287",
+        "labelCampo": "UF Endereço 01",
+        "valorCampo": "@{triggerBody()?['uf_endereco1']}"
+      },
+      {
+        "idCampo": "53B4A132-1384-4F66-BB02-6B46CD0453AD",
+        "labelCampo": "E-mail Endereço 01",
+        "valorCampo": "@{triggerBody()?['email_endereco1']}"
+      },
+      {
+        "idCampo": "9FB3E3FC-3BFC-4EEC-B983-C4770DDBA247",
+        "labelCampo": "Tipo de Endereço 02",
+        "valorCampo": "@{triggerBody()?['tipo_endereco2']}"
+      },
+      {
+        "idCampo": "65184D0F-56CB-4903-AC55-3471CF3DD271",
+        "labelCampo": "Tipo de Logradouro 02",
+        "valorCampo": "@{triggerBody()?['tipo_logradouro2']}"
+      },
+      {
+        "idCampo": "4C6AA354-2E9F-40BE-84E4-22078495390A",
+        "labelCampo": "Logradouro 02",
+        "valorCampo": "@{triggerBody()?['logradouro2']}"
+      },
+      {
+        "idCampo": "027AF48E-5E9D-4190-BE1B-20A1A2BDA5CC",
+        "labelCampo": "Nº Endereço 02",
+        "valorCampo": "@{triggerBody()?['n_endereco2']}"
+      },
+      {
+        "idCampo": "327FBAF4-516E-47ED-A87B-1E4A1B20A6FD",
+        "labelCampo": "Complemento Endereço 02",
+        "valorCampo": "@{triggerBody()?['complemento_endereco2']}"
+      },
+      {
+        "idCampo": "C3812454-5121-4B20-83B3-CB32BB66D1C2",
+        "labelCampo": "Bairro Endereço 02",
+        "valorCampo": "@{triggerBody()?['bairro_endereco2']}"
+      },
+      {
+        "idCampo": "AE071AC7-7EBC-4AAD-8E1C-CC56F18BF564",
+        "labelCampo": "Cidade Endereço 02",
+        "valorCampo": "@{triggerBody()?['cidade_endereco2']}"
+      },
+      {
+        "idCampo": "F47992FF-584A-4EDB-8297-ED31D5B7D005",
+        "labelCampo": "Telefone Endereço 02",
+        "valorCampo": "@{triggerBody()?['telefone_endereco2']}"
+      },
+      {
+        "idCampo": "92BF4AC1-D1AC-46EA-9CCF-CAE3B2644355",
+        "labelCampo": "Celular Endereço 02",
+        "valorCampo": "@{triggerBody()?['celular_endereco2']}"
+      },
+      {
+        "idCampo": "CED52531-2D26-40A5-8C78-46DD990974CC",
+        "labelCampo": "CEP Endereço 02",
+        "valorCampo": "@{triggerBody()?['cep_endereco2']}"
+      },
+      {
+        "idCampo": "E703DB5E-B269-4739-B144-803830E19366",
+        "labelCampo": "UF Endereço 02",
+        "valorCampo": "@{triggerBody()?['uf_endereco2']}"
+      },
+      {
+        "idCampo": "DAF0A9DB-2DD8-4BC4-AD8F-71B9DE5BE769",
+        "labelCampo": "E-mail Endereço 02",
+        "valorCampo": "@{triggerBody()?['email_endereco2']}"
+      },
+      {
+        "idCampo": "309E87C8-7D2A-450C-8628-E63469F3886E",
+        "labelCampo": "Tipo de Endereço 03",
+        "valorCampo": "@{triggerBody()?['tipo_endereco3']}"
+      },
+      {
+        "idCampo": "B3F03BAF-F532-4982-976A-3368EDF60A3B",
+        "labelCampo": "Tipo de Logradouro 03",
+        "valorCampo": "@{triggerBody()?['tipo_logradouro3']}"
+      },
+      {
+        "idCampo": "B42DD448-E97D-41A1-BF26-494C9913896C",
+        "labelCampo": "Logradouro 03",
+        "valorCampo": "@{triggerBody()?['logradouro3']}"
+      },
+      {
+        "idCampo": "7DAECDFC-480F-4EEE-907C-535A29603F44",
+        "labelCampo": "Nº Endereço 03",
+        "valorCampo": "@{triggerBody()?['n_endereco3']}"
+      },
+      {
+        "idCampo": "1E732667-204A-4CFB-AFB6-096DFEF25512",
+        "labelCampo": "Complemento Endereço 03",
+        "valorCampo": "@{triggerBody()?['complemento_endereco3']}"
+      },
+      {
+        "idCampo": "556F8228-D0AB-468E-A888-808B0B7E7170",
+        "labelCampo": "Bairro Endereço 03",
+        "valorCampo": "@{triggerBody()?['bairro_endereco3']}"
+      },
+      {
+        "idCampo": "8FB804B1-C5EC-4EDF-A7B8-1A74D9D99DAF",
+        "labelCampo": "Cidade Endereço 03",
+        "valorCampo": "@{triggerBody()?['cidade_endereco3']}"
+      },
+      {
+        "idCampo": "43AE2C27-16CF-4598-93AA-76AD6B2BB9D9",
+        "labelCampo": "Telefone Endereço 03",
+        "valorCampo": "@{triggerBody()?['telefone_endereco3']}"
+      },
+      {
+        "idCampo": "E2E12ED2-ED7B-4836-8C51-9B7813BD6AEE",
+        "labelCampo": "Celular Endereço 03",
+        "valorCampo": "@{triggerBody()?['celular_endereco3']}"
+      },
+      {
+        "idCampo": "0F7B28E4-D11A-4039-B59E-10E5D8A6E7C7",
+        "labelCampo": "CEP Endereço 03",
+        "valorCampo": "@{triggerBody()?['cep_endereco3']}"
+      },
+      {
+        "idCampo": "BC1AAC96-A727-4F2A-A2FE-D485872E93F6",
+        "labelCampo": "UF Endereço 03",
+        "valorCampo": "@{triggerBody()?['uf_endereco3']}"
+      },
+      {
+        "idCampo": "00F0C731-33AA-47F1-8EF9-41AF78239189",
+        "labelCampo": "E-mail Endereço 03",
+        "valorCampo": "@{triggerBody()?['email_endereco3']}"
+      },
+      {
+        "idCampo": "BFC3D7B1-0D8E-42A2-8242-499FD93A5959",
+        "labelCampo": "Endereço de Correspondência",
+        "valorCampo": "@{triggerBody()?['correspondencia_endereco']}"
+      },
+      {
+        "idCampo": "51970323-084E-4783-93D9-8A117A21D7D1",
+        "labelCampo": "Atenderei todos os Convênios",
+        "valorCampo": "@{triggerBody()?['atendimento_convenio']}"
+      },
+      {
+        "idCampo": "92FCF83D-C424-4A46-8085-A4BF1C096ABB",
+        "labelCampo": "Descrição de outros convênios",
+        "valorCampo": "@{triggerBody()?['descricao_outros']}"
+      },
+      {
+        "idCampo": "27FF67E8-01F1-46B8-8A08-00563F6FA74D",
+        "labelCampo": "Especialidade Principal",
+        "valorCampo": "@{triggerBody()?['especialidade_principal']}"
+      },
+      {
+        "idCampo": "016467C6-61D0-4DC8-982D-7241A5FC5352",
+        "labelCampo": "RQE Principal",
+        "valorCampo": "@{triggerBody()?['rqe_principal']}"
+      },
+      {
+        "idCampo": "22F8F619-502E-44D6-B385-4B1E527B0BAE",
+        "labelCampo": "Especialidade 01",
+        "valorCampo": "@{triggerBody()?['especialidade_01']}"
+      },
+      {
+        "idCampo": "31B231A5-0D42-47ED-A04E-599069FEBEF4",
+        "labelCampo": "RQE 01",
+        "valorCampo": "@{triggerBody()?['rqe_01']}"
+      },
+      {
+        "idCampo": "40B784A7-9E15-49F2-961D-68CA6B19C4AB",
+        "labelCampo": "Especialidade 02",
+        "valorCampo": "@{triggerBody()?['especialidade_02']}"
+      },
+      {
+        "idCampo": "DAA76BF3-6ED3-46BC-9C50-3AB62640C664",
+        "labelCampo": "RQE 02",
+        "valorCampo": "@{triggerBody()?['rqe_02']}"
+      },
+      {
+        "idCampo": "32EB72CC-32AF-430B-A4C7-54249CC93B22",
+        "labelCampo": "Especialidade 03",
+        "valorCampo": "@{triggerBody()?['especialidade_03']}"
+      },
+      {
+        "idCampo": "0DF9EED9-69EC-406F-A5CA-AC1AC8F186E2",
+        "labelCampo": "RQE 03",
+        "valorCampo": "@{triggerBody()?['rqe_03']}"
+      },
+      {
+        "idCampo": "2862A01B-0954-43E2-92A2-A5F27F90548A",
+        "labelCampo": "Especialidade 04",
+        "valorCampo": "@{triggerBody()?['especialidade_04']}"
+      },
+      {
+        "idCampo": "DDFF645D-91ED-47A8-A72F-36022F98AAF9",
+        "labelCampo": "RQE 04",
+        "valorCampo": "@{triggerBody()?['rqe_04']}"
+      },
+      {
+        "idCampo": "84DE1F8A-CC9F-4596-A082-6EA2BF60C473",
+        "labelCampo": "Outras Especialidade/RQE",
+        "valorCampo": "@{triggerBody()?['rqe_outras']}"
+      },
+      {
+        "idCampo": "0EFC3CE5-9861-48DD-B7E7-0F826504E976",
+        "labelCampo": "Capital Social",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "1F94489E-12B3-48BE-8BA1-773C40B9F3F3",
+        "labelCampo": "Autorização para Tratamento de Dados Pessoais",
+        "valorCampo": "@{if(triggerBody()?['declaracao4'], 'Sim', 'Não')}"
+      },
+      {
+        "idCampo": "2CFB7D79-FCC5-4C3F-8021-913DB4C4ED66",
+        "labelCampo": "Termo de Compromisso PPP - Perfil Profissiográfico Previdenciário",
+        "valorCampo": "@{if(triggerBody()?['declaracao5'], 'Sim', 'Não')}"
+      },
+      {
+        "idCampo": "9383F719-B288-45FA-90B2-510C568C5985",
+        "labelCampo": "Recebe benefício previdenciário de aposentadoria?",
+        "valorCampo": "@{triggerBody()?['beneficio']}"
+      },
+      {
+        "idCampo": "F44E6899-1779-4EA2-9512-66DB6924B79E",
+        "labelCampo": "Qual seu regime de aposentadoria?",
+        "valorCampo": "@{triggerBody()?['regime_aposentadoria']}"
+      },
+      {
+        "idCampo": "623505D3-175F-44C9-A8B7-070E9DAC5CD0",
+        "labelCampo": "Qual tipo de aposentadoria?",
+        "valorCampo": "@{triggerBody()?['tipo_beneficio']}"
+      },
+      {
+        "idCampo": "0E646F46-FE17-4BF1-BAA6-1D23A98140CB",
+        "labelCampo": "Localidade COOPMED-RS Principal + CNPJ",
+        "valorCampo": "@{triggerBody()?['local_atendimento_principal']}"
+      },
+      {
+        "idCampo": "43EEA611-AB77-4ACC-89C1-CAD454B107E5",
+        "labelCampo": "Atendimento Médico de Urgência (Principal)",
+        "valorCampo": "@{if(triggerBody()?['atendimento_principal'], 'Sim', 'Não')}"
+      },
+      {
+        "idCampo": "9E3A6C4D-715A-48BD-84DA-8212209B16E6",
+        "labelCampo": "Procedimento Executados nos quais o Médico Tenha Contato com o Paciente (Principal)",
+        "valorCampo": "@{if(triggerBody()?['procedimentos_contato_principal'], 'Sim', 'Não')}"
+      },
+      {
+        "idCampo": "53E72C67-194D-4674-947A-5BDD7D871D96",
+        "labelCampo": "Consulta Médica (Principal)",
+        "valorCampo": "@{if(triggerBody()?['consulta_medica_principal'], 'Sim', 'Não')}"
+      },
+      {
+        "idCampo": "7EFEA924-60AE-4E35-86A5-AED8738500EA",
+        "labelCampo": "Intervenções (Principal)",
+        "valorCampo": "@{if(triggerBody()?['intervencoes_principal'], 'Sim', 'Não')}"
+      },
+      {
+        "idCampo": "31DB3A6F-B6C3-4487-8C30-108007950FF2",
+        "labelCampo": "Outro Tipo de Atuação (Principal)",
+        "valorCampo": "@{if(triggerBody()?['outro_tipo_principal'], 'Sim', 'Não')}"
+      },
+      {
+        "idCampo": "41E6810A-9C33-46CD-871B-B30FF0000D51",
+        "labelCampo": "Descrição Tipo de Atuação (Principal)",
+        "valorCampo": "@{triggerBody()?['descricao_principal']}"
+      },
+      {
+        "idCampo": "1BEA3DD2-CEE8-45F6-8EA5-F403D0FA125F",
+        "labelCampo": "Localidade COOPMED-RS + CNPJ 01",
+        "valorCampo": "@{triggerBody()?['local_atendimento1']}"
+      },
+      {
+        "idCampo": "3FCC7034-B835-40AB-9313-49D757BE923D",
+        "labelCampo": "Atendimento Médico de Urgência (01)",
+        "valorCampo": "@{if(triggerBody()?['atendimento1'], 'Sim', 'Não')}"
+      },
+      {
+        "idCampo": "90FE6FE9-346D-4B72-AE6A-673F9785D986",
+        "labelCampo": "Procedimento Executados nos quais o Médico Tenha Contato com o Paciente (01)",
+        "valorCampo": "@{if(triggerBody()?['procedimentos1'], 'Sim', 'Não')}"
+      },
+      {
+        "idCampo": "C40AF418-3C8A-4372-B124-2CFB1AC8E5FF",
+        "labelCampo": "Consulta Médica (01)",
+        "valorCampo": "@{if(triggerBody()?['consulta_medica2'], 'Sim', 'Não')}"
+      },
+      {
+        "idCampo": "EF5A427C-D4C7-4770-BBD7-84C4642841B2",
+        "labelCampo": "Intervenções (01)",
+        "valorCampo": "@{if(triggerBody()?['intervencoes1'], 'Sim', 'Não')}"
+      },
+      {
+        "idCampo": "7F186D3B-4399-46C4-A343-51B8655D114B",
+        "labelCampo": "Outro Tipo de Atuação (01)",
+        "valorCampo": "@{if(triggerBody()?['outro_tipo1'], 'Sim', 'Não')}"
+      },
+      {
+        "idCampo": "F1BBF6AE-282D-4282-86A5-A066D733810C",
+        "labelCampo": "Descrição Tipo de Atuação (01)",
+        "valorCampo": "@{triggerBody()?['descricao1']}"
+      },
+      {
+        "idCampo": "8195553C-7C2B-4E2B-9C17-7AFDE6DD46A7",
+        "labelCampo": "Localidade COOPMED-RS + CNPJ 02",
+        "valorCampo": "@{triggerBody()?['local_atendimento2']}"
+      },
+      {
+        "idCampo": "F0AA5DC2-0540-4E1B-98B3-DEB66116EF4B",
+        "labelCampo": "Atendimento Médico de Urgência (02)",
+        "valorCampo": "@{if(triggerBody()?['atendimento2'], 'Sim', 'Não')}"
+      },
+      {
+        "idCampo": "D9B6EFAC-88B7-4B89-A16A-B7714CA629E3",
+        "labelCampo": "Procedimento Executados nos quais o Médico Tenha Contato com o Paciente (2)",
+        "valorCampo": "@{if(triggerBody()?['procedimentos2'], 'Sim', 'Não')}"
+      },
+      {
+        "idCampo": "383ED7AD-94D0-4D6B-87DC-4922337D0AEF",
+        "labelCampo": "Consulta Médica (02)",
+        "valorCampo": "@{if(triggerBody()?['consulta_medica3'], 'Sim', 'Não')}"
+      },
+      {
+        "idCampo": "90FDB5F8-0AF0-4E79-B874-57C3E1ABE000",
+        "labelCampo": "Intervenções (02)",
+        "valorCampo": "@{if(triggerBody()?['intervencoes2'], 'Sim', 'Não')}"
+      },
+      {
+        "idCampo": "A589D4B1-AA01-4AA5-81AA-39DB2B011A1D",
+        "labelCampo": "Outro Tipo de Atuação (02)",
+        "valorCampo": "@{if(triggerBody()?['outro_tipo2'], 'Sim', 'Não')}"
+      },
+      {
+        "idCampo": "09639937-FD93-4C32-A068-F8F185FC27D5",
+        "labelCampo": "Descrição Tipo de Atuação (02)",
+        "valorCampo": "@{triggerBody()?['descricao2']}"
+      },
+      {
+        "idCampo": "D3B076B1-ACF3-4701-805C-6AF7885A1BD6",
+        "labelCampo": "Localidade COOPMED-RS + CNPJ 03",
+        "valorCampo": "@{triggerBody()?['local_atendimento3']}"
+      },
+      {
+        "idCampo": "2E21122A-04FA-405D-8FD7-3E9C90D1612D",
+        "labelCampo": "Atendimento Médico de Urgência (03)",
+        "valorCampo": "@{if(triggerBody()?['atendimento3'], 'Sim', 'Não')}"
+      },
+      {
+        "idCampo": "98D7584F-28EE-400D-8F4D-1243C2D82D3C",
+        "labelCampo": "Procedimento Executados nos quais o Médico Tenha Contato com o Paciente (03)",
+        "valorCampo": "@{if(triggerBody()?['procedimentos3'], 'Sim', 'Não')}"
+      },
+      {
+        "idCampo": "8989E3F6-66D9-4AB6-B96A-B823DFAF8F6F",
+        "labelCampo": "Consulta Médica (03)",
+        "valorCampo": "@{if(triggerBody()?['consulta_medica3'], 'Sim', 'Não')}"
+      },
+      {
+        "idCampo": "E66D4314-6B26-4285-ADE3-94FE8857DFFD",
+        "labelCampo": "Intervenções (03)",
+        "valorCampo": "@{if(triggerBody()?['intervencoes3'], 'Sim', 'Não')}"
+      },
+      {
+        "idCampo": "5686DA40-7574-4FFE-8572-578321FBC8F8",
+        "labelCampo": "Outro Tipo de Atuação (03)",
+        "valorCampo": "@{if(triggerBody()?['outro_tipo3'], 'Sim', 'Não')}"
+      },
+      {
+        "idCampo": "EC91FFA9-1539-4BF0-933E-03385598F39F",
+        "labelCampo": "Descrição Tipo de Atuação (03)",
+        "valorCampo": "@{triggerBody()?['descricao3']}"
+      },
+      {
+        "idCampo": "537C7F98-4F80-436F-AB0A-9D0BEAEAF9FF",
+        "labelCampo": "Localidade COOPMED-RS + CNPJ 04",
+        "valorCampo": "@{triggerBody()?['local_atendimento4']}"
+      },
+      {
+        "idCampo": "8ED063FE-3FB4-4FCD-BF77-E80633D6874B",
+        "labelCampo": "Atendimento Médico de Urgência (04)",
+        "valorCampo": "@{if(triggerBody()?['atendimento4'], 'Sim', 'Não')}"
+      },
+      {
+        "idCampo": "822AF698-D152-45A7-B883-C3AF9A449C1A",
+        "labelCampo": "Procedimento Executados nos quais o Médico Tenha Contato com o Paciente (04)",
+        "valorCampo": "@{if(triggerBody()?['procedimentos4'], 'Sim', 'Não')}"
+      },
+      {
+        "idCampo": "EE9B604C-45E7-4875-89BA-721944409D81",
+        "labelCampo": "Consulta Médica (04)",
+        "valorCampo": "@{if(triggerBody()?['consulta_medica4'], 'Sim', 'Não')}"
+      },
+      {
+        "idCampo": "4F6C8D6B-4B2B-42B6-8F79-1D9E6DE15BC5",
+        "labelCampo": "Intervenções (04)",
+        "valorCampo": "@{if(triggerBody()?['intervencoes4'], 'Sim', 'Não')}"
+      },
+      {
+        "idCampo": "9A1FF739-972B-4C5C-A7A0-8499FCB7DC1A",
+        "labelCampo": "Outro Tipo de Atuação (04)",
+        "valorCampo": "@{if(triggerBody()?['outro_tipo4'], 'Sim', 'Não')}"
+      },
+      {
+        "idCampo": "6AA29C78-17C1-4F7C-B5E8-32346A99572D",
+        "labelCampo": "Descrição Tipo de Atuação (04)",
+        "valorCampo": "@{triggerBody()?['descricao4']}"
+      },
+      {
+        "idCampo": "BE23E8BC-FA75-4AD5-8786-EC5C2C61365E",
+        "labelCampo": "Outros Locais de Atendimento",
+        "valorCampo": "@{triggerBody()?['locais_atendimento']}"
+      },
+      {
+        "idCampo": "E2019E03-EAB7-4BCE-9F54-E35A1E215332",
+        "labelCampo": "Nome da Contabilidade",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "73292BBA-4E1E-4DA4-9DAD-FE449B211E48",
+        "labelCampo": "Responsável da Contabilidade",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "C9E941AB-0E68-41A8-8E24-AAF84E74AA34",
+        "labelCampo": "Telefone Fixo da Contabilidade",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "ED2C3DAF-BBEA-4C13-A52F-EBC0155992D1",
+        "labelCampo": "Celular da Contabilidade",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "69DBA136-A39D-48F9-84A6-92506CE981E0",
+        "labelCampo": "E-mail do Contador",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "26B249CB-956D-40DE-9577-04A5C9D65724",
+        "labelCampo": "Nome do Representante da Empresa",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "EB0A5E6F-A863-435F-936C-FEEFBAFEC7C0",
+        "labelCampo": "Conselho do Representante",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "12D4F995-179B-4977-8417-BC293B6A07B0",
+        "labelCampo": "Nº Conselho do Representante",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "EDFD4366-98A9-4367-9AE6-13C1D05FBFC9",
+        "labelCampo": "E-mail do Representante de Empresa",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "3DBDC8EF-C35C-4A12-B1D7-0CFF1CD94BBC",
+        "labelCampo": "Como soube sobre a Cooperativa COOPMED-RS",
+        "valorCampo": "@{triggerBody()?['como_conheceu']}"
+      },
+      {
+        "idCampo": "2E7F9A7B-16A0-47CB-8ABA-5342091621F0",
+        "labelCampo": "Ciência do Cooperado",
+        "valorCampo": "@{triggerBody()?['ciencia_cooperado']}"
+      },
+      {
+        "idCampo": "3409714E-2D1A-4E06-A65D-1C2801C73516",
+        "labelCampo": "Data de Ciência do Cooperado",
+        "valorCampo": "@{triggerBody()?['dt_ciencia']}"
+      },
+      {
+        "idCampo": "CB6C8E08-3C1F-41A3-82CE-5E7611A0FC93",
+        "labelCampo": "Ajuste",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "125FBA8F-8146-4204-AD4C-DDB217AB3176",
+        "labelCampo": "Aprovado?",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "57109F95-5AF4-4A9B-8901-47CA9DAFACE4",
+        "labelCampo": "Justificativa",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "A186DA0A-7749-4E23-9274-7B09F2D44B0E",
+        "labelCampo": "Observação Diretoria",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "037D8225-B0FD-4A1A-BB08-55A340B68841",
+        "labelCampo": "Observação COOPERATIVA",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "9CAE226E-F301-44EF-985C-1B6636F11016",
+        "labelCampo": "Motivo de Saída da Cooperativa",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "C810A4AE-A4A4-45EC-9B0D-48D3F4E297F7",
+        "labelCampo": "Local de Atendimento COOPMED-RS Principal",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "B7AF6726-9326-4993-84A5-E39319B056FA",
+        "labelCampo": "Local de Atendimento COOPMED-RS 02",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "C2AE6767-4549-436E-BD4E-B09903CFE181",
+        "labelCampo": "Local de Atendimento COOPMED-RS 03",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "A433BC09-16F5-4925-91D6-A8265F636DF9",
+        "labelCampo": "Local de Atendimento COOPMED-RS 04",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "C6BD2F1B-524A-41FC-98AC-721DCF951D7C",
+        "labelCampo": "Local de Atendimento COOPMED-RS 01",
+        "valorCampo": ""
+      },
+      {
+        "idCampo": "31AB556F-9098-4D40-BC94-FC8C86B8F6B5",
+        "labelCampo": "Autorização desconto nos repasses de honorários médicos",
+        "valorCampo": "@{if(triggerBody()?['declaracao'], 'Sim', 'Não')}"
+      },
+      {
+        "idCampo": "89329B74-CE14-458E-AD51-75A1E70F4815",
+        "labelCampo": "Autorização uso dos endereços de e-mails",
+        "valorCampo": "@{if(triggerBody()?['declaracao2'], 'Sim', 'Não')}"
+      },
+      {
+        "idCampo": "2BEF9B2E-56D4-431C-B769-FF88DEBC4F22",
+        "labelCampo": "Aceite requerimento de ingresso",
+        "valorCampo": "@{if(triggerBody()?['declaracao3'], 'Sim', 'Não')}"
+      }
+    ]
+  },
+  "documentos": [],
+  "arquivos": [
+    {
+      "arquivo": "@{triggerBody()?['arquivos']?[0]?['conteudo']}",
+      "extensao": "@{triggerBody()?['arquivos']?[0]?['extensao']}",
+      "assinar": true,
+      "ordem": 0,
+      "versao": "1",
+      "nomeArquivo": "@{triggerBody()?['arquivos']?[0]?['nome']}"
+    },
+    {
+      "arquivo": "@{triggerBody()?['arquivos']?[1]?['conteudo']}",
+      "extensao": "@{triggerBody()?['arquivos']?[1]?['extensao']}",
+      "assinar": true,
+      "ordem": 1,
+      "versao": "1",
+      "nomeArquivo": "@{triggerBody()?['arquivos']?[1]?['nome']}"
+    },
+    {
+      "arquivo": "@{triggerBody()?['arquivos']?[2]?['conteudo']}",
+      "extensao": "@{triggerBody()?['arquivos']?[2]?['extensao']}",
+      "assinar": true,
+      "ordem": 2,
+      "versao": "1",
+      "nomeArquivo": "@{triggerBody()?['arquivos']?[2]?['nome']}"
+    },
+    {
+      "arquivo": "@{triggerBody()?['arquivos']?[3]?['conteudo']}",
+      "extensao": "@{triggerBody()?['arquivos']?[3]?['extensao']}",
+      "assinar": true,
+      "ordem": 3,
+      "versao": "1",
+      "nomeArquivo": "@{triggerBody()?['arquivos']?[3]?['nome']}"
+    }
+  ],
+  "selecionadoExternoVarios": [],
+  "emailGrupoExterno": []
+}
